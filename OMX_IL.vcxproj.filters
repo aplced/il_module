@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\data_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script_exec_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Communication\Media\Tcp\CCommunicationMediaTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Communication\Channel\Implementation\CCommunicationChannelImplementation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetConfigHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetParamHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\COMXComponentDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetConfigHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetParamHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherCommandHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetHandleHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseHandleHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortLinkHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAllocateBufferHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetPortInfoHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetPortBufferCountHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherFillThisBufferHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherEmptyThisBufferHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortUseMarshalledMemHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetOMXVersionHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSInitHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSConfigHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerAttachHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerSetNamePrefixHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortConfigAllocTypeHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortSetUpServiceHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAutoBuffCycleHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetILClientVersionHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemFreeHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocTypeHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemCopyHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemDumpHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemReadHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalFileCopyHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\OMXComponent\COMXComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\DSS\CDisplayDSS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFaceRectDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFrameOIP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceMetadOIP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceExtractMetad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFrameRate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\COMXPortServiceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\SurfaceFlinger\CDisplaySurfaceFlinger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryAllocator\Ion\CMemoryAllocatorIon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\COMXPortService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\OMXComponent\COMXBuffDoneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDisconnectTCPHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferBuffer\Save2File\CTransferBufferSave2File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransferBuffer\Stream2Host\CTransferBufferStream2Host.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceStreamBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceSaveBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetI2CHandleHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CReadHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CWriteHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseI2CHandleHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Communication\I2C\CCommunicationI2C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\lib_comm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\messages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\Channel\CCommunicationChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\Media\CCommunicationMedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\Media\Tcp\CCommunicationMediaTcp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Display\CDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\Channel\Implementation\CCommunicationChannelImplementation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\CComponentDispatcherMessageHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetConfigHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetParamHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\COMXComponentDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetConfigHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetParamHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherCommandHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetHandleHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseHandleHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortLinkHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAllocateBufferHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetPortInfoHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetPortBufferCountHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherFillThisBufferHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherEmptyThisBufferHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortUseMarshalledMemHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetOMXVersionHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSInitHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSConfigHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerAttachHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerSetNamePrefixHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortConfigAllocTypeHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortSetUpServiceHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAutoBuffCycleHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetILClientVersionHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemFreeHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocTypeHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemCopyHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemDumpHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemReadHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalFileCopyHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\Channel\CChannelMessageConsumer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Display\DSS\CDisplayDSS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\COMXPortService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFaceRectDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFrameOIP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceMetadOIP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceExtractMetad.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFrameRate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\COMXPortServiceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Display\SurfaceFlinger\CDisplaySurfaceFlinger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\CComponentDispatcherMessageHandleFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Display\CDisplayFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MemoryAllocator\CMemoryAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MemoryAllocator\CMemoryAllocatorFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MemoryAllocator\Ion\CMemoryAllocatorIon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXBuffDoneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXPortHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXCompBufferDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDisconnectTCPHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceStreamBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\transferbuffer\ctransferbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferBuffer\Save2File\CTransferBufferSave2File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransferBuffer\Stream2Host\CTransferBufferStream2Host.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceSaveBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Communication\I2C\CCommunicationI2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetI2CHandleHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CReadHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CWriteHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseI2CHandleHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

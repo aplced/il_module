@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\Communication\Channel\CChannelMessageConsumer.h" />
+    <ClInclude Include="inc\Communication\Channel\Implementation\CCommunicationChannelImplementation.h" />
+    <ClInclude Include="inc\Communication\I2C\CCommunicationI2C.h" />
+    <ClInclude Include="inc\Communication\Media\Tcp\CCommunicationMediaTcp.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\CComponentDispatcherMessageHandleFactory.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDisconnectTCPHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetI2CHandleHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CReadHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CWriteHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseI2CHandleHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerAttachHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXBuffDoneManager.h" />
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXCompBufferDesc.h" />
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXPortHandle.h" />
+    <ClInclude Include="inc\Display\CDisplayFactory.h" />
+    <ClInclude Include="inc\Display\SurfaceFlinger\CDisplaySurfaceFlinger.h" />
+    <ClInclude Include="inc\MemoryAllocator\CMemoryAllocator.h" />
+    <ClInclude Include="inc\MemoryAllocator\CMemoryAllocatorFactory.h" />
+    <ClInclude Include="inc\MemoryAllocator\Ion\CMemoryAllocatorIon.h" />
+    <ClInclude Include="inc\PortService\COMXPortServiceManager.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceAFStatusCallBack.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceStreamBuffer.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceExtractMetad.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="src\Communication\I2C\CCommunicationI2C.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherConfigPortServicesHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPAllocKernelNodeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPDeinitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPGetCoreCapacityHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPImageAllocHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPImageConstructHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPImageFreeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPImageInitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPInitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPInitNodeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPInitParamsHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPKernelGraphDeinitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPKernelGraphInitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPKernelNodeFreeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPPrintPerformanceGraphHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPSetCoreCapacityHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDVPStartKGraphProcessHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetI2CHandleHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CReadHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherI2CWriteHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseI2CHandleHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerAttachHandle.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceAFStatusCallBack.cpp" />
+    <ClCompile Include="src\TransferBuffer\Save2File\CTransferBufferSave2File.cpp" />
+    <ClCompile Include="src\TransferBuffer\Stream2Host\CTransferBufferStream2Host.cpp" />
+    <ClCompile Include="src\Communication\Media\Tcp\CCommunicationMediaTcp.cpp" />
+    <ClCompile Include="src\Communication\Channel\Implementation\CCommunicationChannelImplementation.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDisconnectTCPHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalFileCopyHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemDumpHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemReadHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemCopyHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocTypeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemFreeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetILClientVersionHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAutoBuffCycleHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortSetUpServiceHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortConfigAllocTypeHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerSetNamePrefixHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSConfigHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSInitHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetOMXVersionHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortUseMarshalledMemHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherEmptyThisBufferHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherFillThisBufferHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetPortBufferCountHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetPortInfoHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAllocateBufferHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortLinkHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseHandleHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetHandleHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherCommandHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetParamHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetConfigHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetParamHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetConfigHandle.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\COMXComponentDispatcher.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\OMXComponent\COMXBuffDoneManager.cpp" />
+    <ClCompile Include="src\ComponentDispatcher\OMXComponent\COMXComponent.cpp" />
+    <ClCompile Include="src\data_server.cpp" />
+    <ClCompile Include="src\Display\DSS\CDisplayDSS.cpp" />
+    <ClCompile Include="src\Display\SurfaceFlinger\CDisplaySurfaceFlinger.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MemoryAllocator\Ion\CMemoryAllocatorIon.cpp" />
+    <ClCompile Include="src\PortService\COMXPortService.cpp" />
+    <ClCompile Include="src\PortService\COMXPortServiceManager.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceStreamBuffer.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceExtractMetad.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFaceRectDraw.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFrameOIP.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceFrameRate.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceMetadOIP.cpp" />
+    <ClCompile Include="src\PortService\Implementation\COMXPortServiceSaveBuffer.cpp" />
+    <ClCompile Include="src\script_exec_thread.cpp" />
+    <ClInclude Include="inc\transferbuffer\ctransferbuffer.h" />
+    <ClInclude Include="inc\TransferBuffer\Save2File\CTransferBufferSave2File.h" />
+    <ClInclude Include="inc\TransferBuffer\Stream2Host\CTransferBufferStream2Host.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\Communication\Channel\CCommunicationChannel.h" />
+    <ClInclude Include="inc\Communication\Media\CCommunicationMedia.h" />
+    <ClInclude Include="inc\ComponentDispatcher\OMXComponent\COMXComponent.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalFileCopyHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemDumpHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemReadHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemCopyHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocTypeHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemFreeHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherMarshalMemAllocHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetILClientVersionHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAutoBuffCycleHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortSetUpServiceHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortConfigAllocTypeHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherStreamerSetNamePrefixHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSConfigHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherDSSInitHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetOMXVersionHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortUseMarshalledMemHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherEmptyThisBufferHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherFillThisBufferHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetPortBufferCountHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetPortInfoHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortAllocateBufferHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherPortLinkHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherReleaseHandleHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\CComponentDispatcherMessageHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetHandleHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherCommandHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetParamHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherGetConfigHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetParamHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\MessageHandles\Implementation\CComponentDispatcherSetConfigHandle.h" />
+    <ClInclude Include="inc\ComponentDispatcher\COMXComponentDispatcher.h" />
+    <ClInclude Include="inc\Display\CDisplay.h" />
+    <ClInclude Include="inc\Display\DSS\CDisplayDSS.h" />
+    <ClInclude Include="inc\lib_comm.h" />
+    <ClInclude Include="inc\messages.h" />
+    <ClInclude Include="inc\PortService\COMXPortService.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFaceRectDraw.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFrameOIP.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceFrameRate.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceMetadOIP.h" />
+    <ClInclude Include="inc\PortService\Implementation\COMXPortServiceSaveBuffer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
